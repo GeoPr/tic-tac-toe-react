@@ -1,0 +1,36 @@
+.page {
+  // .page__sc
+  &__sc {
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 0px;
+    background: #232332;
+  }
+}
+.sc {
+  // .sc__container
+  &__container {
+  }
+  // .sc__body
+  &__body {
+    display: flex;
+    justify-content: center;
+  }
+  // .sc__items
+  &__items {
+    display: grid;
+    justify-content: center;
+    grid-template: repeat(3, 150px) / repeat(3, 150px);
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  // .sc__item
+  &__item {
+    background: #eee;
+    border: 1px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-size: 5rem;
+  }
+}
